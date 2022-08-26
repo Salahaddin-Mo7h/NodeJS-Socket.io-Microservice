@@ -1,0 +1,9 @@
+version: "3"
+services:
+  pmbt-nodejs-socketio-chat-server:
+    image: "pmbt-nodejs-socketio-chat-server:latest"
+    restart: always
+    network_mode: bridge
+    env_file: .env
+    ports:
+      - "5262:5262"
